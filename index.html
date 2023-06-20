@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Validator</title>
+
+    <script defer src="PasswordValidatorApp.js"></script>
+
+    <link rel="shortcut icon" type="image/jpg" href="istockphoto-1367070716-1024x1024.jpg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+    <div style="background-image: url('banner-5185767.jpg'); 
+      background-size: cover; height: 680px; border-radius: 10%;
+      padding-top: 80px;">
+        <h1 style="font-size: 50px; color: white; margin: 50px; text-align: right;">Password Strength Validator</h1>
+        <marquee>
+            <p style="font-size: 20px; color: white;"><em>Is your password strong enough?</em></p>
+        </marquee>
+    </div>
+
+    <p class="link" style="color: aliceblue; font-size: 25px; margin-left: 30px; position: absolute; left: 10px; top: 40px;">
+        <a href="AboutThisSite.html" target="_blank">About</a>
+    </p>
+
+    <p class="link"
+        style="color: rgb(231, 236, 241); font-size: 25px; margin-left: 30px; text-align: start; position: absolute; left: 10px; top: 80px;">
+        <a href="hints.html" target="_blank">Hints</a>
+    </p>
+
+    <h2 style="font-size: 20px; color: white; margin: 60px; margin-bottom: 10px; text-align: right;">Your choice of
+        password</h2>
+    <span id="toggle" onclick="toggle()">
+        <i class='fa fa-eye'></i>
+    </span>
+    <div class="strength-meter" id="strength-meter"></div>
+    <input class="password-input" id="password-input" type="password" placeholder="Enter Password">
+    <div id="reasons" class="reasons"></div>
+</body>
+
+</html>

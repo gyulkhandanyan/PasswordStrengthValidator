@@ -1,0 +1,87 @@
+a:visited {
+    color: white;
+  }
+  
+  a:hover {
+    color: rgb(157, 176, 157);
+  }
+  
+  #toggle {
+    position: absolute;
+    top: 542px;
+    right: 60px;
+    color: black;
+  }
+  
+  *::before,
+  *::after,
+  * {
+    box-sizing: border-box;
+  }
+  
+  .strength-meter {
+    position: relative;
+    height: 2rem;
+    width: 20%;
+    border: 3px solid hsl(257, 5%, 26%);
+    border-radius: 1rem;
+    margin: -0.03px;
+    margin-left: 1180px;
+    overflow: hidden;
+  }
+  
+  .strength-meter::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: calc(1% * var(--strength, 0));
+    background-color: hsl(57, 5%, 67%);
+    transition: width 200ms;
+  }
+  
+  .password-input {
+    margin-top: 30px;
+    margin-left: 1180px;
+    width: 20%;
+    height: 6%;
+    padding: 0.25rem 0.75rem; /* Remove the comma between values */
+    background-color: hsl(60, 1%, 43%);
+    color: white;
+    border: 1px solid hsl(57, 5%, 57%);
+    outline: none;
+    text-align: center;
+    border-radius: 5.03rem;
+  }
+  
+  .password-input:focus {
+    border-color: hsl(57, 5%, 70%);
+  }
+  
+  #reasons {
+    margin-left: 800px;
+    margin-top: -120px;
+    position: absolute;
+    text-align: center;
+    color: hsl(57, 5%, 80%);
+  }
+  
+  ::placeholder {
+    color: white;
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+    color: white;
+  }
+  
+  ::-ms-input-placeholder {
+    color: white;
+  }
+  
+  figcaption {
+    position: relative;
+    margin-top: 500px;
+    margin-left: 80px;
+  }
+  
